@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authorization"
+    android:background="@color/black"
+    >
+
+
+
+    <TextView
+        android:id="@+id/auth_tv_maintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="36dp"
+        android:text="АВТОРИЗАЦИЯ"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"/>
+
+
+    <EditText
+        android:id="@+id/auth_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Логин:"
+        android:textColor="@color/white"
+        android:textColorHint="@color/purple_500"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/auth_tv_maintext"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/auth_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Пароль:"
+        android:textColor="@color/white"
+        android:textColorHint="@color/purple_500"
+        android:textSize="24dp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/auth_login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/auth_btnNewAccount"
+        android:layout_width="390dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/purple_500"
+        android:text="Регистрация"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth_btnLogin"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/auth_btnLogin"
+        android:layout_width="391dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/purple_500"
+        android:text="Авторизация"
+        android:textColor="@color/white"
+
+
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth_password"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/UserScanner"
+        android:layout_width="384dp"
+        android:layout_height="318dp"
+        android:background="@color/purple_500"
+        android:text="Войти с отпечатком пальца"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auth_btnNewAccount"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
